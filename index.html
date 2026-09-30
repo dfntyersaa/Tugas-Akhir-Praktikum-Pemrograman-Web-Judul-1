@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+<header>
+    <h1>Sistem Informasi Data Mahasiswa - Praktikum 1 - Kelas PW-C</h1>
+    <p>Website ini berisi Sistem Data Mahasiswa Praktikum Judul 1 Pemrograman Web Defianty Ersa Arfarany</p>
+    <img src="foto_ersa.jpeg" alt="Logo" width="100" height="100">
+    <hr>
+    <nav>
+        <ul>
+            <li><a href="Informasi-Aplikasi">Informasi</a></li>
+            <li><a href="Daftar-Mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="Tambah-Mahasiswa-Baru">Tambah Mahasiswa Baru</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+<main>
+    <section id="Informasi Aplikasi">
+        <h2>Informasi Sistem</h2>
+        <p>Ini adalah web sederhana untuk menampilkan data mahasiswa.</p>
+        <article>
+            <h3>Informasi Detail</h3>
+            <p>Web ini dibuat untuk keperluan praktikum pemrograman web.</p>
+        </article>
+    </section>
+</main>
+</hr>
+
+<section id="Daftar-Mahasiswa">
+    <hr>Daftar Mahasiswa</hr>
+    <h2>Mahasiswa Aktif</h2>
+    <p>Deskripsi daftar mahasiswa</p>
+    <table border="1", cellpadding=""8", cellspacing="0">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NPM</th>
+                <th>Program Studi</th>
+                <th>Angkatan</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Defianty Ersa Arfarany</td>
+                <td>2415061080</td>
+                <td>Teknik Informatika</td>
+                <td>2024</td>
+                <td>dfntyersa@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <section>
+        <hr>
+        <section id="form-tambah"> </section>
+    
+        <h2>Mahasiswa Baru</h2>
+        <p>Formulir untuk menambahkan mahasiswa baru</p>
+
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Formulir Mahasiswa Baru</legend>
+                <label for="nama">Nama lengkap:</label>
+                <input type="text" id="nama" name="nama" required><br><br>
+
+                <label for="npm">NPM:</label>
+                <input type="text" id="npm" name="npm" required><br><br>
+
+                <label for="prodi">Program Studi:</label>
+                <select id="prodi" name="prodi" required>
+                    <option value="">Pilih Program Studi</option>
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                   
+                <label for="angkatan">Tahun Angkatan:</label>
+                <input type="number" id="angkatan" name="angkatan" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <input type="submit" value="Simpan Data Mahasiswa">
+            </fieldset>
+        </form>
+    </section>
+
+</main>
+</body>
