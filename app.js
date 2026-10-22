@@ -206,6 +206,7 @@ if (formTambah) {
 function hapusMahasiswa(npm) {
     const mhs = dataMahasiswa.find(item => item.npm === npm);
     if(!mhs) return;
+}
 
 const konfirmasi = confirm(`Apakah Anda yakin ingin menghapus data mahasiswa:\n${mhs.nama} (${npm})?`);
 
@@ -233,11 +234,10 @@ renderTable(filteredData);
 
 });
     }
-}
 
 
 // Inisialisasi saat DOM selesai dimuat
     document.addEventListener("DOMContentLoaded", function () {
         renderTable(dataMahasiswa);
 });
-
+    
